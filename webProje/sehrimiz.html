@@ -15,6 +15,23 @@
             margin: 0;
             padding: 0;
         }
+
+        .places {
+            background-color: #f5e6f7;
+            /* Arka plan rengi: Mor */
+            padding: 20px;
+        }
+
+        .place {
+            margin-bottom: 20px;
+        }
+
+        .place img {
+            max-width: 60%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
     </style>
 </head>
 
@@ -63,7 +80,7 @@
             <h1>Afyonkarahisar Şehri</h1>
         </header>
 
-        <div id="carouselExampleCaptions" class="carousel slide" style="height: 500px; width: 800px;">
+        <div id="carouselExampleCaptions" class="carousel slide" style="height: 25%; width: 60%;">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -71,27 +88,39 @@
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="resimler/afyon-kalesi2.jpg" class="d-block w-100" alt="...">
+                    <img src="resimler/frig vadisi (1).jpg" class="d-block w-100" alt="..." onclick="showInfo(4)" style="cursor: pointer;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Karahisar Kalesi</h5>
-                        <p>Afyonkarahisara adınıda veren meşhur ve görkemli kale</p>
+                        <h3>Frig Vadisi</h3>
+                        <p>Ünlü AROG filminin çekildiği antik yer</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="" class="d-block w-100" alt="...">
+                    <img src="resimler/WhatsApp Görsel 2024-05-11 saat 14.43.33_614f4bfc.jpg" class="d-block w-100" onclick="showInfo(1)" style="cursor: pointer;"
+                        alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Frig Vadisi</h5>
-                        <p></p>
+                        <h3>Karahisar Kalesi</h3>
+                        <p>Memleketime ismini veren meşhur görkemli kale</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="" class="d-block w-100" alt="...">
+                    <img src="resimler/WhatsApp Görsel 2024-05-11 saat 14.54.06_d9f06d02.jpg" class="d-block w-100" onclick="showInfo(2)" style="cursor: pointer;"
+                        alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Zafer Müzesi</h5>
-                        <p></p>
+                        <h3>Sandıklı Hüdai Kaplıcaları</h3>
+                        <p>Şifalı jeotermal suların bulunduğu kaplıca</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="resimler/WhatsApp Görsel 2024-05-11 saat 14.43.41_fdd3917c.jpg" class="d-block w-100" onclick="showInfo(3)" style="cursor: pointer;"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Zafer Müzesi</h3>
+                        <p>Büyük taaruzun başladı topraklardaki savaş müzesi</p>
                     </div>
                 </div>
             </div>
@@ -107,13 +136,13 @@
             </button>
         </div>
         <br>
-        <br><br>
         <main>
 
             <section class="info">
                 <hr>
                 <h2>Nüfus</h2>
-                <p>- Afyonkarahisar'ın son nüfus verilerine göre şehirde yaklaşık olarak 751.344 kişi yaşamaktadır. -</p>
+                <p>- Afyonkarahisar'ın son nüfus verilerine göre şehirde yaklaşık olarak 751.344 kişi yaşamaktadır. -
+                </p>
                 <hr>
 
                 <h2>Yüzölçüm</h2>
@@ -143,8 +172,8 @@
                     Sinanpaşa/
                     Sultandağı/
                     Şuhut -</p>
-                    <hr>
-                
+                <hr>
+
                 <h2>Plaka Kodu</h2>
                 <p>- 03 -</p>
                 <hr>
@@ -154,9 +183,120 @@
                 <h2>Coğrafi Bölge</h2>
                 <p>- Ege Bölgesi -</p>
                 <hr>
-                
+
             </section>
         </main>
+        <br>
+
+        <section class="places">
+            <div style="height: 10%; width: 50%; border: solid; background-color: aqua;">
+                <h2>Afyonkarahisarda Gezilmesi Gereken Yerler</h2>
+            </div>
+            <section class="place" id="1">
+                <br><br>
+                <h2>Karahisar Kalesi</h2>
+                <img src="resimler/afyonkarahisar-kalesi-3.webp" alt="Örnek Yer Resmi">
+                <br>
+                <p>İl merkezinde bulunan Karahisar Kalesi, volkanik bir kaya kütlesi üzerinde konumlanmış şekilde duran
+                    tarihî bir yapı. Konumlandığı volkanik kaya kütlesinin 226 metrelik yüksekliği kaleyi eşsiz bir
+                    manzaraya sahip hâle getiriyor. Bölgenin en eski tarihî yapılarından biri olma özelliğine sahip olan
+                    Karahisar Kalesi’nin MÖ 1350 yılında Hitit İmparatoru II. Murşili tarafından inşa edildiği düşünülüyor.
+
+                    Toplamda 546 basamaktan oluşan kale Afyon’u ayaklarınızın altına seriyor. Şehir merkezinde, Kent
+                    Mahâllesi’nde konumlanan Karahisar Kalesi, Ulu Cami’nin hemen karşısında yer alıyor. Ulaşım için
+                    toplu taşımayı ya da şahsi aracınızı tercih edebilirsiniz. Şehrin herhangi bir noktasından
+                    bineceğiniz minibüsler ile ulaşım sağlayabilirsiniz. Kaleye girişler ise ücretsiz.</p>
+            </section>
+            <br>
+
+            <section class="place" id="2">
+                <h2>Sandıklı Hüdai Kaplıcaları</h2>
+                <img src="resimler/sandıklı hüdai kaplıcaları.webp" alt="Başka Bir Yer Resmi">
+                <br>
+                <p>Çamur banyoları ile tanınmış bir termal tedavi merkezi olan Sandıklı Hüdai Kaplıcaları, Afyon’un
+                    turistik açıdan en dikkat çekici yerlerinden biri. Kaplıcalarda bulunan suyun kas ağrıları, kadın
+                    hastalıkları, sindirim sistemi bozuklukları ve romatizmal hastalıklar gibi pek çok hastalık için
+                    şifa olduğu biliniyor. Kaplıca bölgesinde bulunan az kumlu killi toprak ve 68 derecelik termal su,
+                    çamur banyosu yapılmasını sağlayan karışımın hazırlanması için kullanılıyor.
+
+                    Sandıklı Hüdai Kaplıcalarında yer alan çok sayıda otel bulunuyor. Türkiye’nin Gastronomi Şehirleri
+                    arasında yer alan Afyon’da konaklama için bu bölgede yer alan Afyon otelleri tercih edebilirsiniz.
+                    Böylelikle hem kaplıcalardan faydalanabilir hem de oteller tarafından sunulan yöresel lezzetleri
+                    tadabilirsiniz.
+
+                    Hem ruhsal hem de fiziksel olarak ziyaretçilerini şifa olmayı amaçlayan Sandıklı Hüdai Kaplıcaları
+                    her yıl binlerce yerli ve yabancı turist tarafından ziyaret ediliyor. Özellikle kış aylarında
+                    oldukça kalabalık oluyor.</p>
+            </section>
+            <br>
+            <section class="place" id="3">
+                <h2>Zafer Müzesi</h2>
+                <img src="resimler/WhatsApp Görsel 2024-05-11 saat 14.43.41_fdd3917c.jpg" alt="Başka Bir Yer Resmi">
+                <br>
+                <p>Başkomutan Meydan Muharebesinin taarruz emri verildiği bina, çeşitli restorasyon çalışmaları
+                    geçirerek Afyonkarahisar Zafer Müzesi hâline getirilmiş durumda. Savaş hakkında bilgiler veren çok
+                    sayıda envantere ev sahipliği yapan müze, Afyon için en önemli müzelerden biri. Müzenin Mustafa
+                    Kemal Paşa, İsmet İnönü ve Fevzi Çakmak anısına kaldıkları odaların düzenlenerek ziyarete açıldığı
+                    biliniyor.
+
+                    2 katlı bir müze olan Afyonkarahisar Zafer Müzesi ilk katında 10 oda, 1 toplantı salonu; ikinci
+                    katında ise 9 oda ve sergi salonundan oluşuyor. Yılın belirli zamanlarında müzede sanatsal ve
+                    kültürel sergiler düzenleniyor.
+
+                    Anıt Parkı Karşısında, Hükûmet Konağının ise yan tarafında bulunan Afyonkarahisar Zafer Müzesi’ne
+                    şahsi aracınız veya toplu taşıma araçları ile ulaşabilirsiniz. Ücretsiz şekilde gezebileceğiniz müze
+                    pazartesi günleri hariç her gün 09.00 ile 17.15 arasında ziyarete açık.
+
+                </p>
+            </section>
+            <br>
+            <section class="place">
+                <h2>Eber Gölü</h2>
+                <img src="resimler/Eber-Golu-3.jpg" alt="Başka Bir Yer Resmi">
+                <br>
+                <p>Yalnızca tarihi değil doğal güzellikleriyle de dikkat çeken Afyon’da mutlaka görülmesi gereken
+                    yerlerden biri Eber Gölü olarak biliniyor. Sakarca kazlarına, karabataklara ve dalmaçya
+                    pelikanlarına ev sahipliği yapan Eber Gölü oldukça renkli bir ekosisteme sahip. Türkiye’nin en büyük
+                    12. gölü olma özelliğine sahip olan Eber Gölü, avcılar tarafından da yoğun bir ilgi görüyor. Göl
+                    üzerinde hâlk tarafından “kopak” ismi ile anılan çok sayıda adacık bulunuyor. Göl 1992 yılından beri
+                    1. dereceden tabiat sit alanı olarak koruma altında tutuluyor.
+
+                    Bolvadin ve Çay ilçeleri arasında yer alan ve renkli eko sistemi ile saklı bir cennet olan Eber
+                    Gölü’ne şahsi aracınız ile ulaşabilirsiniz. Giriş için herhangi bir ücret talep edilmiyor.</p>
+            </section>
+            <br>
+            <section class="place" id="4">
+                <h2>Frig Vadisi</h2>
+                <img src="resimler/frig-vadisi-nin-40-yillik-rehberi-9574612_8410_amp.jpg" alt="Başka Bir Yer Resmi">
+                <br>
+                <p>55 hektar büyüklüğünde bir tabiat parkı olan Frig Vadisinin bundan 3.000 yıl önce Frigyalı’ların
+                    oyarak yaptığı düşünülen kaya evlerine, kaleleri ve anıtlara ev sahipliği yaptığı biliniyor. Frig
+                    Vadisi çevresinde kaya anıtları ve kaya yerleşimleri de bulunuyor.
+
+                    Vadide Roma ve Bizans dönemine ait mezar odaları ve kiliseler bulunuyor. Frig Vadisinde yer alan
+                    patikanın 5 yıllık bir çalışmanın ardından bulunduğu biliniyor. Bölgede kültürel ve doğa ile iç içe
+                    turlar yapmak mümkün.
+
+                    Frig Vadisine girmek için 10 TL ücret ödemeniz gerekiyor. Şehir merkezine 121 km uzaklıkta bulunan
+                    vadiye turlar aracılığıyla ulaşabileceğiniz gibi şahsi aracınızla da ulaşabilirsiniz. Bunun yanı
+                    sıra Afyon’dan İhsaniye otobüsüne binip kalan yolu taksi ile de gidebilirsiniz.</p>
+            </section>
+            <br>
+            <section class="place">
+                <h2>Buzluk Mağrası</h2>
+                <img src="resimler/buzluk_magarasi.png" alt="Başka Bir Yer Resmi">
+                <br>
+                <p>Eğer Afyon seyahatinizi yaz aylarında planlıyorsanız Buzluk Mağarası’nı mutlaka gezilmesi gereken
+                    yerler listenize eklemelisiniz! Üç kademeli bir mağara olan Buzluk Mağarası ilk girişi normal bir
+                    ısı seviyesine sahip olsa da aşağı katlara indikçe soğumaya başlıyor. Öyle ki en aşağı kısmında buz
+                    parçaları ile karşılaşıyorsunuz.
+
+                    İklim koşullarına bağlı olarak gelişen ve oldukça farklı bir yapı olan Buzluk Mağarası, Afyon’da
+                    turistik açıdan en ilgi çekici ve değişik yerlerden biri. Merkezde yer alan mağaraya şahsi aracınız
+                    ile ulaşabilirsiniz. Mağaraya giriş yapmak için ücret ödemeniz gerekmez.</p>
+            </section>
+
+
     </center>
 
 
@@ -164,10 +304,12 @@
 
 
 
-
-
-
-
+    <script>
+         function showInfo(infoId) {
+            var infoElement = document.getElementById(infoId);
+            infoElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
