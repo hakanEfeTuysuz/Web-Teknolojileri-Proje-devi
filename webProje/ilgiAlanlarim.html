@@ -56,12 +56,27 @@
         </div>
     </nav>
 
-    <h3>İlgi alanlarım</h3>
-
-
-
-
-
+    <div class="container mt-5">
+        <h1>İlgi Alanlarım - Köpekler</h1>
+        <form id="searchForm" class="mb-4">
+            <div class="form-group">
+                <label for="breed">Köpek Cinsi:</label>
+                <select id="breed" class="form-control" required>
+                    <option value="">Bir cins seçin</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="bulldog">Bulldog</option>
+                    <option value="dalmatian">Dalmatian</option>
+                    <option value="labrador">Labrador</option>
+                    <option value="pitbull">Pitbull</option>
+                    <option value="dachshund">Dachshund</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Ara</button>
+        </form>
+        <div id="content"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
 
 
 
